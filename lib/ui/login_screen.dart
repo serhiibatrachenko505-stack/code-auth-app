@@ -4,7 +4,12 @@ import 'widgets/primary_button.dart';
 import '../data/auth_service.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+  // ЗМІНЕНО: додаємо можливість підставити AuthService ззовні (для тестів)
+  final AuthService auth;
+
+  // ЗМІНЕНО: конструктор тепер приймає необов’язковий auth,
+  // якщо не передали — використовуємо реальний AuthService()
+  LoginScreen({super.key, AuthService? auth}) : auth = auth ?? AuthService();
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -16,7 +21,16 @@ class _LoginScreenState extends State<LoginScreen> {
   final _passCtrl = TextEditingController();
   final _confirmCtrl = TextEditingController();
 
-  final _auth = AuthService();
+  // ЗМІНЕНО: було final _auth = AuthService();
+  // тепер беремо сервіс з widget.auth (щоб у тестах підміняти на Mock)
+  late final AuthService _auth;
+
+  @override
+  void initState() {
+    super.initState();
+    // ЗМІНЕНО: ініціалізуємо _auth з widget.auth
+    _auth = widget.auth;
+  }
 
   @override
   void dispose() {
@@ -70,28 +84,40 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   const SizedBox(height: 32),
+
+                  // ЗМІНЕНО: додали Key, щоб тести могли стабільно знаходити поле
                   AppInput(
+                    key: const Key('login_login'),
                     hint: 'Нікнейм/email',
                     controller: _loginCtrl,
                     keyboardType: TextInputType.emailAddress,
                     validator: (v) =>
                     (v == null || v.trim().isEmpty) ? 'Заповніть поле' : null,
                   ),
+
                   const SizedBox(height: 18),
+
+                  // ЗМІНЕНО: додали Key
                   AppInput(
+                    key: const Key('login_password'),
                     hint: 'Пароль',
                     controller: _passCtrl,
                     obscure: true,
                     validator: (v) =>
                     (v == null || v.length < 6) ? 'Мінімум 6 символів' : null,
                   ),
+
                   const SizedBox(height: 18),
+
+                  // ЗМІНЕНО: додали Key
                   AppInput(
+                    key: const Key('login_confirm'),
                     hint: 'Підтвердження паролю',
                     controller: _confirmCtrl,
                     obscure: true,
                     validator: (v) => null,
                   ),
+
                   const SizedBox(height: 28),
                   PrimaryButton(text: 'Вхід', onPressed: _submit),
                   const SizedBox(height: 18),

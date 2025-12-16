@@ -48,8 +48,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        '/': (_) => const LoginScreen(),
-        '/register': (_) => const RegisterScreen(),
+        '/': (_) => LoginScreen(),
+        '/register': (_) => RegisterScreen(),
       },
     );
   }
