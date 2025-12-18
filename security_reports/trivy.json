@@ -1,0 +1,609 @@
+{
+  "SchemaVersion": 2,
+  "ReportID": "019b326d-6641-79dd-be41-4b27474250e9",
+  "CreatedAt": "2025-12-18T19:06:29.0576464+02:00",
+  "ArtifactID": "sha256:0975727b94af74eda272f4e36720e932b50afa0f1e5b2594278c961deb16febb",
+  "ArtifactName": ".",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "https://github.com/serhiibatrachenko505-stack/code-auth-app.git",
+    "Branch": "main",
+    "Commit": "a00001d237412c80baf57c928def9d65cba13ace",
+    "CommitMsg": "Add integration tests for auth UI with mock/spy",
+    "Author": "Serhii \u003cserhiibatrachenko505@gmail.com\u003e",
+    "Committer": "Serhii \u003cserhiibatrachenko505@gmail.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "pubspec.lock",
+      "Class": "lang-pkgs",
+      "Type": "pub",
+      "Packages": [
+        {
+          "ID": "crypto@3.0.6",
+          "Name": "crypto",
+          "Identifier": {
+            "PURL": "pkg:pub/crypto@3.0.6",
+            "UID": "cc1d26a3b2a80502"
+          },
+          "Version": "3.0.6",
+          "Relationship": "direct",
+          "DependsOn": [
+            "typed_data@1.4.0"
+          ]
+        },
+        {
+          "ID": "cupertino_icons@1.0.8",
+          "Name": "cupertino_icons",
+          "Identifier": {
+            "PURL": "pkg:pub/cupertino_icons@1.0.8",
+            "UID": "441ed471cd5a7ccb"
+          },
+          "Version": "1.0.8",
+          "Relationship": "direct"
+        },
+        {
+          "ID": "flutter@0.0.0",
+          "Name": "flutter",
+          "Identifier": {
+            "PURL": "pkg:pub/flutter@0.0.0",
+            "UID": "d6e98fc34afdb87c"
+          },
+          "Version": "0.0.0",
+          "Relationship": "direct"
+        },
+        {
+          "ID": "flutter_lints@5.0.0",
+          "Name": "flutter_lints",
+          "Identifier": {
+            "PURL": "pkg:pub/flutter_lints@5.0.0",
+            "UID": "9a7a7339ce170861"
+          },
+          "Version": "5.0.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "lints@5.1.1"
+          ]
+        },
+        {
+          "ID": "flutter_test@0.0.0",
+          "Name": "flutter_test",
+          "Identifier": {
+            "PURL": "pkg:pub/flutter_test@0.0.0",
+            "UID": "17a9beb7fcc2ea9"
+          },
+          "Version": "0.0.0",
+          "Relationship": "direct"
+        },
+        {
+          "ID": "mocktail@1.0.4",
+          "Name": "mocktail",
+          "Identifier": {
+            "PURL": "pkg:pub/mocktail@1.0.4",
+            "UID": "4287f44fa373bff3"
+          },
+          "Version": "1.0.4",
+          "Relationship": "direct",
+          "DependsOn": [
+            "collection@1.19.1",
+            "matcher@0.12.17",
+            "test_api@0.7.6"
+          ]
+        },
+        {
+          "ID": "path@1.9.1",
+          "Name": "path",
+          "Identifier": {
+            "PURL": "pkg:pub/path@1.9.1",
+            "UID": "e533a7dcfd895143"
+          },
+          "Version": "1.9.1",
+          "Relationship": "direct"
+        },
+        {
+          "ID": "sqflite@2.4.2",
+          "Name": "sqflite",
+          "Identifier": {
+            "PURL": "pkg:pub/sqflite@2.4.2",
+            "UID": "97ff27f36d16037b"
+          },
+          "Version": "2.4.2",
+          "Relationship": "direct",
+          "DependsOn": [
+            "sqflite_darwin@2.4.2",
+            "sqflite_platform_interface@2.4.0",
+            "sqflite_common@2.5.6",
+            "path@1.9.1",
+            "flutter@0.0.0",
+            "sqflite_android@2.4.2+2"
+          ]
+        },
+        {
+          "ID": "sqflite_common_ffi@2.3.6",
+          "Name": "sqflite_common_ffi",
+          "Identifier": {
+            "PURL": "pkg:pub/sqflite_common_ffi@2.3.6",
+            "UID": "c64f4f4dc79f9bc6"
+          },
+          "Version": "2.3.6",
+          "Relationship": "direct",
+          "DependsOn": [
+            "synchronized@3.4.0",
+            "path@1.9.1",
+            "meta@1.16.0",
+            "sqlite3@2.9.4",
+            "sqflite_common@2.5.6"
+          ]
+        },
+        {
+          "ID": "async@2.13.0",
+          "Name": "async",
+          "Identifier": {
+            "PURL": "pkg:pub/async@2.13.0",
+            "UID": "f3b5f2e786a1552f"
+          },
+          "Version": "2.13.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "collection@1.19.1",
+            "meta@1.16.0"
+          ]
+        },
+        {
+          "ID": "boolean_selector@2.1.2",
+          "Name": "boolean_selector",
+          "Identifier": {
+            "PURL": "pkg:pub/boolean_selector@2.1.2",
+            "UID": "946dad5b886fecf9"
+          },
+          "Version": "2.1.2",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "source_span@1.10.1",
+            "string_scanner@1.4.1"
+          ]
+        },
+        {
+          "ID": "characters@1.4.0",
+          "Name": "characters",
+          "Identifier": {
+            "PURL": "pkg:pub/characters@1.4.0",
+            "UID": "2a3417945c7e7afd"
+          },
+          "Version": "1.4.0",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "clock@1.1.2",
+          "Name": "clock",
+          "Identifier": {
+            "PURL": "pkg:pub/clock@1.1.2",
+            "UID": "7cfa2e44ef311634"
+          },
+          "Version": "1.1.2",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "collection@1.19.1",
+          "Name": "collection",
+          "Identifier": {
+            "PURL": "pkg:pub/collection@1.19.1",
+            "UID": "241888610f7fce44"
+          },
+          "Version": "1.19.1",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "fake_async@1.3.3",
+          "Name": "fake_async",
+          "Identifier": {
+            "PURL": "pkg:pub/fake_async@1.3.3",
+            "UID": "df9736576bcbe4c2"
+          },
+          "Version": "1.3.3",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "collection@1.19.1",
+            "clock@1.1.2"
+          ]
+        },
+        {
+          "ID": "ffi@2.1.4",
+          "Name": "ffi",
+          "Identifier": {
+            "PURL": "pkg:pub/ffi@2.1.4",
+            "UID": "a4ab2a192c8eab73"
+          },
+          "Version": "2.1.4",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "leak_tracker@11.0.1",
+          "Name": "leak_tracker",
+          "Identifier": {
+            "PURL": "pkg:pub/leak_tracker@11.0.1",
+            "UID": "cb16261fcbd4d12b"
+          },
+          "Version": "11.0.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "clock@1.1.2",
+            "collection@1.19.1",
+            "meta@1.16.0",
+            "path@1.9.1",
+            "vm_service@15.0.2"
+          ]
+        },
+        {
+          "ID": "leak_tracker_flutter_testing@3.0.10",
+          "Name": "leak_tracker_flutter_testing",
+          "Identifier": {
+            "PURL": "pkg:pub/leak_tracker_flutter_testing@3.0.10",
+            "UID": "eaa1facabb3727b9"
+          },
+          "Version": "3.0.10",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "leak_tracker_testing@3.0.2",
+            "matcher@0.12.17",
+            "meta@1.16.0",
+            "flutter@0.0.0",
+            "leak_tracker@11.0.1"
+          ]
+        },
+        {
+          "ID": "leak_tracker_testing@3.0.2",
+          "Name": "leak_tracker_testing",
+          "Identifier": {
+            "PURL": "pkg:pub/leak_tracker_testing@3.0.2",
+            "UID": "27a84adf7e9c15c8"
+          },
+          "Version": "3.0.2",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "leak_tracker@11.0.1",
+            "matcher@0.12.17",
+            "meta@1.16.0"
+          ]
+        },
+        {
+          "ID": "lints@5.1.1",
+          "Name": "lints",
+          "Identifier": {
+            "PURL": "pkg:pub/lints@5.1.1",
+            "UID": "234a9360b87493d5"
+          },
+          "Version": "5.1.1",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "matcher@0.12.17",
+          "Name": "matcher",
+          "Identifier": {
+            "PURL": "pkg:pub/matcher@0.12.17",
+            "UID": "52afcfcab329063"
+          },
+          "Version": "0.12.17",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "async@2.13.0",
+            "meta@1.16.0",
+            "stack_trace@1.12.1",
+            "term_glyph@1.2.2",
+            "test_api@0.7.6"
+          ]
+        },
+        {
+          "ID": "material_color_utilities@0.11.1",
+          "Name": "material_color_utilities",
+          "Identifier": {
+            "PURL": "pkg:pub/material_color_utilities@0.11.1",
+            "UID": "e0d49edb09101285"
+          },
+          "Version": "0.11.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "collection@1.19.1"
+          ]
+        },
+        {
+          "ID": "meta@1.16.0",
+          "Name": "meta",
+          "Identifier": {
+            "PURL": "pkg:pub/meta@1.16.0",
+            "UID": "d8ef53005f85339"
+          },
+          "Version": "1.16.0",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "platform@3.1.6",
+          "Name": "platform",
+          "Identifier": {
+            "PURL": "pkg:pub/platform@3.1.6",
+            "UID": "2471f6baa4b3710b"
+          },
+          "Version": "3.1.6",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "plugin_platform_interface@2.1.8",
+          "Name": "plugin_platform_interface",
+          "Identifier": {
+            "PURL": "pkg:pub/plugin_platform_interface@2.1.8",
+            "UID": "7066565f70061e93"
+          },
+          "Version": "2.1.8",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "meta@1.16.0"
+          ]
+        },
+        {
+          "ID": "sky_engine@0.0.0",
+          "Name": "sky_engine",
+          "Identifier": {
+            "PURL": "pkg:pub/sky_engine@0.0.0",
+            "UID": "53716a1bf33358b7"
+          },
+          "Version": "0.0.0",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "source_span@1.10.1",
+          "Name": "source_span",
+          "Identifier": {
+            "PURL": "pkg:pub/source_span@1.10.1",
+            "UID": "bc7e8dc233db290c"
+          },
+          "Version": "1.10.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "term_glyph@1.2.2",
+            "collection@1.19.1",
+            "path@1.9.1"
+          ]
+        },
+        {
+          "ID": "sqflite_android@2.4.2+2",
+          "Name": "sqflite_android",
+          "Identifier": {
+            "PURL": "pkg:pub/sqflite_android@2.4.2%2B2",
+            "UID": "c29cc05bd6c47d09"
+          },
+          "Version": "2.4.2+2",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "flutter@0.0.0",
+            "sqflite_common@2.5.6",
+            "path@1.9.1",
+            "sqflite_platform_interface@2.4.0"
+          ]
+        },
+        {
+          "ID": "sqflite_common@2.5.6",
+          "Name": "sqflite_common",
+          "Identifier": {
+            "PURL": "pkg:pub/sqflite_common@2.5.6",
+            "UID": "1ea9f825a26968e1"
+          },
+          "Version": "2.5.6",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "synchronized@3.4.0",
+            "path@1.9.1",
+            "meta@1.16.0"
+          ]
+        },
+        {
+          "ID": "sqflite_darwin@2.4.2",
+          "Name": "sqflite_darwin",
+          "Identifier": {
+            "PURL": "pkg:pub/sqflite_darwin@2.4.2",
+            "UID": "13c32a925d167a89"
+          },
+          "Version": "2.4.2",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "path@1.9.1",
+            "flutter@0.0.0",
+            "sqflite_platform_interface@2.4.0",
+            "meta@1.16.0",
+            "sqflite_common@2.5.6"
+          ]
+        },
+        {
+          "ID": "sqflite_platform_interface@2.4.0",
+          "Name": "sqflite_platform_interface",
+          "Identifier": {
+            "PURL": "pkg:pub/sqflite_platform_interface@2.4.0",
+            "UID": "5e4dcc54b0b0d112"
+          },
+          "Version": "2.4.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "meta@1.16.0",
+            "flutter@0.0.0",
+            "platform@3.1.6",
+            "sqflite_common@2.5.6",
+            "plugin_platform_interface@2.1.8"
+          ]
+        },
+        {
+          "ID": "sqlite3@2.9.4",
+          "Name": "sqlite3",
+          "Identifier": {
+            "PURL": "pkg:pub/sqlite3@2.9.4",
+            "UID": "8b9093ad0ae0585b"
+          },
+          "Version": "2.9.4",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "collection@1.19.1",
+            "ffi@2.1.4",
+            "meta@1.16.0",
+            "path@1.9.1",
+            "web@1.1.1",
+            "typed_data@1.4.0"
+          ]
+        },
+        {
+          "ID": "stack_trace@1.12.1",
+          "Name": "stack_trace",
+          "Identifier": {
+            "PURL": "pkg:pub/stack_trace@1.12.1",
+            "UID": "608d984c8b4b5b07"
+          },
+          "Version": "1.12.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "path@1.9.1"
+          ]
+        },
+        {
+          "ID": "stream_channel@2.1.4",
+          "Name": "stream_channel",
+          "Identifier": {
+            "PURL": "pkg:pub/stream_channel@2.1.4",
+            "UID": "380e4514c20adc36"
+          },
+          "Version": "2.1.4",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "async@2.13.0"
+          ]
+        },
+        {
+          "ID": "string_scanner@1.4.1",
+          "Name": "string_scanner",
+          "Identifier": {
+            "PURL": "pkg:pub/string_scanner@1.4.1",
+            "UID": "50466208a7350a37"
+          },
+          "Version": "1.4.1",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "source_span@1.10.1"
+          ]
+        },
+        {
+          "ID": "synchronized@3.4.0",
+          "Name": "synchronized",
+          "Identifier": {
+            "PURL": "pkg:pub/synchronized@3.4.0",
+            "UID": "44c9dc7456129f0b"
+          },
+          "Version": "3.4.0",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "term_glyph@1.2.2",
+          "Name": "term_glyph",
+          "Identifier": {
+            "PURL": "pkg:pub/term_glyph@1.2.2",
+            "UID": "bed7ef0424c002ae"
+          },
+          "Version": "1.2.2",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "test_api@0.7.6",
+          "Name": "test_api",
+          "Identifier": {
+            "PURL": "pkg:pub/test_api@0.7.6",
+            "UID": "4be93bd4a29b5169"
+          },
+          "Version": "0.7.6",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "meta@1.16.0",
+            "source_span@1.10.1",
+            "stack_trace@1.12.1",
+            "term_glyph@1.2.2",
+            "boolean_selector@2.1.2",
+            "collection@1.19.1",
+            "stream_channel@2.1.4",
+            "string_scanner@1.4.1",
+            "async@2.13.0"
+          ]
+        },
+        {
+          "ID": "typed_data@1.4.0",
+          "Name": "typed_data",
+          "Identifier": {
+            "PURL": "pkg:pub/typed_data@1.4.0",
+            "UID": "3c5f29d58eb9fb1d"
+          },
+          "Version": "1.4.0",
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "collection@1.19.1"
+          ]
+        },
+        {
+          "ID": "vector_math@2.2.0",
+          "Name": "vector_math",
+          "Identifier": {
+            "PURL": "pkg:pub/vector_math@2.2.0",
+            "UID": "db3211f48fd6142f"
+          },
+          "Version": "2.2.0",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "vm_service@15.0.2",
+          "Name": "vm_service",
+          "Identifier": {
+            "PURL": "pkg:pub/vm_service@15.0.2",
+            "UID": "fd43f71d243b1888"
+          },
+          "Version": "15.0.2",
+          "Indirect": true,
+          "Relationship": "indirect"
+        },
+        {
+          "ID": "web@1.1.1",
+          "Name": "web",
+          "Identifier": {
+            "PURL": "pkg:pub/web@1.1.1",
+            "UID": "42b8fdb6089569b0"
+          },
+          "Version": "1.1.1",
+          "Indirect": true,
+          "Relationship": "indirect"
+        }
+      ]
+    }
+  ]
+}
